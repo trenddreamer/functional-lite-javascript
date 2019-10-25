@@ -1,12 +1,13 @@
 function bar(x, y) {
   var z;
+
   foo();
+  return [z, y];
 
   function foo() {
     y++;
     z = x * y;
   }
-  return [z, y];
 }
 
 z;
